@@ -1,7 +1,7 @@
 // Website modifiers
 function renderTotalsupply(totalSupply) {
 	const readableSupply = totalSupply.substring(0, totalSupply.length - 18) + "." + totalSupply.substring(totalSupply.length - 18, totalSupply.length - 15);
-	document.getElementById("current_supply").innerHTML = " Supply: " + readableSupply + " .";
+	document.getElementById("current_supply").innerHTML = "Current supply: " + readableSupply + " .";
 }
 
 function renderDevsCounter(devs) {
