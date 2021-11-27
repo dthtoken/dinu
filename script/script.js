@@ -6,7 +6,7 @@ function renderTotalsupply(totalSupply) {
 
 function renderDevsCounter(devs) {
 	// Get number of devs holding dinu ;)
-	document.getElementById("devs").innerHTML = " Devs: " + devs + " :)";
+	document.getElementById("devs").innerHTML = " D: " + devs + " :)";
 }
 
 // Chain interface
