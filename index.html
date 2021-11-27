@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Dev Inu Token</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Dev Inu is an ERC20 token on the devETH network." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.ico">
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        h1,
+        h2 {
+            margin: 10px 0 0 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 5px;
+        }
+
+        .footer {
+            padding-top: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p style="text-align: center;">
+            <img src="img/dinusmall.png" width="100" height="100">
+        </p>
+        <h1>Dev Inu Token</h1>
+        <small>
+            ($DINU)</small>
+        <p>
+            DINU is an defaltionary<strong>*</strong> ERC20 token on the <a href="https://deveth.org/" target="_blank">
+                devETH network</a>.
+            The token was coded and deployed for learning and for fun. Not for speculation.
+            99% of the supply is locked in
+            <a href="https://www.devethswap.de/#/swap?outputCurrency=0x07Da78967cE3FD0181026a2819c28F0395E1e5Ec"
+                target="_blank">
+                devethswap</a> liquidity
+                <small style="color:tomato;">(set 6% slippeage for swap to allow token burning.)</small><br>
+            <small>
+                <small><strong>*</strong></small>4% burn, 1% tax every transaction. <br>
+                <small><strong>**</strong></small>Contract code is <a href="#" target="_blank">public</a>.
+            </small>
+
+        </p>
+
+        <br>
+        <h2>DINU Tokenomics:</h2>
+        <p>
+            <b><a href="https://explore.deveth.org/account/0x07da78967ce3fd0181026a2819c28f0395e1e5ec"
+                    target="_blank">ContractAddress</a>:</b>
+            0x07Da78967cE3FD0181026a2819c28F0395E1e5Ec <br>
+            <b>Total supply:</b> 101,000,000,000 <br>
+            <b>Liquidity(<a
+                    href="https://www.devethswap.de/#/swap?outputCurrency=0x07Da78967cE3FD0181026a2819c28F0395E1e5Ec"
+                    target="_blank">devethswap</a>):</b>
+            250dTH/100,000,000,000DINU.
+            <a href="https://explore.deveth.org/tx/0xc5e9a4c6e0a261b903e3739397e477e8c6774f5c11a7d21a34386acb47df65cf"
+                target="_blank">LP tokens burnt</a>. <br>
+        </p>
+        <p class="footer">
+            <small>
+                <small>Dev Inu .</small>
+                <small><a href="#" target="_blank">github</a> .</small>
+                <small id="current_supply" style="color: midnightblue;"></small>
+                <small id="devs" style="color: midnightblue;"></small>
+            </small>
+        </p>
+    </div>
+</body>
+<footer>
+    <!-- Need web3 to interogate chain -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js" integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="script/script.js"></script>
+    <script>
+        (function() {
+            getStats();
+            setInterval(getStats, 15000);
+        })();
+    </script>
+</footer>
+</html>
